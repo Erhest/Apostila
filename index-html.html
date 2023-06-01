@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML</title>
+    <link rel="stylesheet" type="text/css" href="Assets/css/index.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.1/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.1/mode/htmlmixed/htmlmixed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.1/addon/edit/matchbrackets.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="index-html.html">HTML</a>
+            <a href="index-css.html">CSS</a>
+            <a href="index-js.html">JS</a>
+            <a href="index-git.html">GIT</a>
+
+        </nav>
+    </header>
+   
+    <main>
+        <section>
+            <h2>O que é HTML?</h2>
+            <p>HTML (Hyper Text Markup Language) é uma linguagem de marcação usada para criar páginas da web.
+                Ele consiste em uma série de elementos que são usados para estruturar e formatar o conteúdo da página.
+            </p>
+            <p>Aqui estão alguns conceitos fundamentais do HTML:</p>
+    
+            <ul>
+                <li>Elementos: Os elementos HTML são as peças fundamentais da linguagem e são representados por tags.
+                    Uma tag HTML é cercada por colchetes angulares (<code>&lt;&gt;</code>) e contém o nome do elemento. 
+                    Por exemplo, a tag <code>'&lt;p&gt;'</code> é usada para criar um parágrafo.
+                </li>
+                <li>Tags de abertura e fechamento: A maioria dos elementos HTML requer uma tag de abertura e uma tag de fechamento.
+                    A tag de abertura indica o início do elemento, enquanto a tag de fechamento indica o seu fim. Por exemplo:
+                    <div class="example">
+                        <pre class="code">
+                            <code>&lt;p&gt;Este é um parágrafo.&lt;p&gt;</code>
+                        </pre>
+                        <button onclick="copyCode(this)">Copiar Código</button>
+                    </div>
+                </li>
+                <li>Atributos: Os atributos fornecem informações adicionais sobre os elementos HTML. 
+                    Eles são especificados na tag de abertura e têm um nome e um valor. 
+                    Por exemplo, o atributo src é usado para especificar a localização de uma imagem em uma tag' <code>&lt;img&gt;</code>'. Exemplo:
+                    <div class="example">
+                        <pre class="code">
+                            <code>&lt;img src="caminho/para/imagem.jpg" alt="Descrição da imagem" &gt;</code>
+                        </pre>
+                        <button onclick="copyCode(this)">Copiar Código</button>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    
+        <section>
+            <h3>Estrutura básica de uma página HTML: Toda página HTML deve ter uma estrutura básica. Aqui está um exemplo:</h3>
+            <div example>
+                <!-- <div class="flex items-center relative text-gray-200 bg-gray-800 px-4 py-2 text-xs font-sans justify-between rounded-t-md">
+                    <span>html</span><button class="flex ml-auto gap-2">
+                        <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round"
+                         stroke-linejoin="round" class="h-4 w-4" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                         <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1">
+    
+                         </rect></svg>Copy code</button></div>
+                         <button class="flex ml-auto gap-2"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round"
+                             stroke-linejoin="round" class="h-4 w-4" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                             <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2">
+    
+                         </path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect></svg>Copy code</button> -->
+        <pre class="example">
+            <pre class="code">
+                <code>
+                    &lt;!DOCTYPE html&gt;
+                    &lt;html&gt;
+                        &lt;head&gt;
+                            &lt;title&gt;Título da Página&lt;/title&gt;
+                        &lt;/head&gt;
+                    &lt;body&gt;
+                        &lt;h1&gt;Meu Primeiro Cabeçalho&lt;/h1&gt;
+                        &lt;p&gt;Meu Primeiro Parágrafo.&lt;/p&gt;
+                        &lt;/body&gt;
+                    &lt;/html&gt;
+                </code>
+            </pre>
+            <button onclick="copyCode(this)">Copiar Código</button>
+            <button id="try-button">Try It Yourself</button>
+
+            <div id="result"><iframe src="example.html" frameborder="0"></iframe>
+                
+                <!-- <!DOCTYPE html>
+                <html>
+                    <head>
+                        <title>Título da Página</title>
+                    </head>
+                    <body>
+                        <h1>Meu Primeiro Cabeçalho</h1>
+                        <p>Meu Primeiro Parágrafo.</p>
+                    </body>
+                </html>
+                -->
+            </div>
+        </pre>
+                <div>
+                    <p>A declaração <code>&lt;!DOCTYPE html&gt;</code> define que este documento é um documento HTML5.</p>
+                    <p>O elemento  <code>&lt;html&gt;</code> é o elemento raiz de uma página HTML.</p>
+                    <p>O elemento <code>&lt;/head&gt;</code> contém informações meta sobre a página HTML.</p>
+                    <p>O elemento <code> &lt;title&gt;</code> especifica um título para a página HTML (que é exibido na barra de título do navegador ou na guia da página).</p>
+                    <p>O elemento <code>&lt;body&gt;</code> define o corpo do documento e é um container para todo o conteúdo visível, como cabeçalhos, 
+                        parágrafos, imagens, hiperlinks, tabelas, listas, etc.</p>
+                    <p>O elemento <code> &lt;h1&gt;</code> define um cabeçalho grande.</p>
+                    <p>O elemento <code> &lt;p&gt;</code> define um parágrafo.</p>
+                </div>
+    
+            </div>
+            <ul>
+                <li>Outros elementos HTML: Além dos elementos mencionados acima, o HTML possui uma ampla variedade de elementos para diferentes finalidades. 
+                    Alguns exemplos incluem: &lt;a&gt; para links, &lt;img&gt; para imagens, &lt;ul&gt; e &lt;li&gt; para listas, &lt;table&gt; para tabelas
+                    , &lt;form&gt; para formulários,
+                     entre outros.
+                </li>
+            </ul>
+            <p>Esses são apenas conceitos básicos do HTML. À medida que você avança, pode aprender mais sobre formatação de texto, estilos CSS, 
+                elementos avançados, acessibilidade e outras práticas recomendadas para criar páginas da web de alta qualidade.
+            </p>
+            <p>Lembre-se de que o HTML é apenas a estrutura da página, e o estilo e o comportamento podem ser adicionados usando CSS e JavaScript, respectivamente.</p>
+           
+        </section>
+    
+        <section>        
+            <h3>Aninhamento de elementos: É possível aninhar elementos HTML, o que significa colocar um elemento dentro de outro.</h3>
+            <p>Exemplo:</p>
+            <div class="example">
+                <pre class="code">
+                    <code>
+                        &lt;div&gt;
+                            &lt;h2&gt;Título do Div&lt;/h2&gt;                    
+                            &lt;p&gt;Este é um parágrafo dentro do div.&lt;/p&gt;
+                        &lt;/div&gt;
+                    </code>
+                </pre>
+                <button onclick="copyCode(this)">Copiar Código</button>
+            </div>
+            <p>Nesse exemplo, o elemento '&lt;h2&gt;' e o elemento '&lt;p&gt;' estão aninhados dentro do elemento '&lt;div&gt;'.</p>
+    
+            <h3>Comentários: Você pode adicionar comentários ao seu código HTML para fins de documentação ou para explicar partes específicas do código. 
+                Os comentários não são exibidos na página, mas são úteis para outros desenvolvedores ou para você mesmo ao revisar o código. 
+                Os comentários em HTML são escritos entre <code>&lt;!-- e --&gt;</code>.</h3>
+            <p>Exemplo:</p>
+            <div class="example">
+                <pre class="code">
+                    <code>&lt;!-- Este é um comentário em HTML --&gt;</code>
+                </pre>
+                <button onclick="copyCode(this)">Copiar Código</button>
+            </div>
+            <h3>Elementos vazios: Alguns elementos HTML não possuem conteúdo e não precisam de uma tag de fechamento. Eles são chamados de elementos vazios ou autossuficientes. 
+                Por exemplo, a tag '&lt;br&gt;' é usada para inserir uma quebra de linha e não requer uma tag de fechamento.</h3>
+            <div class="example">
+                <pre class="code">
+                    <code>
+                        &lt;br&gt;
+                    </code>
+                </pre>
+                <button onclick="copyCode(this)">Copiar Código</button>
+            </div>
+    
+            <h3>Links: O elemento '&lt;a&gt;' é usado para criar links em uma página HTML. Ele requer o atributo "href", que especifica o destino do link.</h3>
+            <p>Exemplo:</p>
+            <div class="example">
+                <pre class="code">
+                    <code>&lt;a href="https://www.example.com"&gt;Clique aqui para visitar o site&lt;/a&gt;</code>
+                </pre>
+                <button onclick="copyCode(this)">Copiar Código</button>
+            </div>
+            <p>Ao clicar no link, o usuário será redirecionado para o URL especificado no atributo "href".</p>
+    
+            <h3>Listas: Você pode criar listas ordenadas '&lt;ol&gt;' ou listas não ordenadas '&lt;ul&gt;' em HTML. Cada item da lista é representado pela tag '&lt;li&gt;'.</h3>
+            <p>Exemplo:</p>
+            <div class="example">
+                <pre class="code">
+                    <code>
+                        &lt;ul&gt;
+                            &lt;li&gt;item 1&lt;/li&gt;
+                            &lt;li&gt;item 2&lt;/li&gt;
+                            &lt;li&gt;item 3&lt;/li&gt;
+                        &lt;/ul&gt;
+                    </code>
+                </pre>
+                <button onclick="copyCode(this)">Copiar Código</button>
+                
+                <p>Isso criará uma lista não ordenada com três itens.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Quattro Edtech</p>
+    </footer>
+
+    <script src="Assets/js/index.js"></script>
+</body>
+</html>

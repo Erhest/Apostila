@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="Assets/css/index.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="index-html.html">HTML</a>
+            <a href="index-css.html">CSS</a>
+            <a href="index-js.html">JS</a>
+            <a href="index-git.html">GIT</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>O que é JavaScript(JS)?</h2>
+            <p>
+                JavaScript, é uma linguagem de programação amplamente utilizada para criar interatividade em páginas web. 
+                O JavaScript permite que você manipule elementos HTML, responda a eventos, processe dados e crie lógica para o seu site.
+            </p>
+
+            <h3>
+                Variáveis: Em JavaScript, você pode declarar variáveis usando as palavras-chave 'var', 'let' ou 'const'. 
+                As variáveis são usadas para armazenar valores, que podem ser números, strings, booleanos, objetos ou outros tipos de dados.
+            </h3>
+            <pre>
+                <code>
+                    var nome = "João";
+                    let idade = 25;
+                    const PI = 3.14;
+                </code>
+            </pre>
+
+            <h3>
+                Tipos de dados: JavaScript possui vários tipos de dados, incluindo números, strings, booleanos, arrays, objetos e nulos. 
+                É uma linguagem de tipagem dinâmica, o que significa que você não precisa especificar o tipo de uma variável ao declará-la.
+            </h3>
+
+            <h3>
+                Funções: As funções são blocos de código que realizam uma tarefa específica. 
+                Você pode criar suas próprias funções em JavaScript usando a palavra-chave 'function'. 
+                As funções podem receber parâmetros e retornar valores.
+            </h3>
+            <pre>
+                <code>
+                    function saudacao(nome) {
+                        console.log("Olá, " + nome + "!");
+                      }
+                      
+                      saudacao("João"); // Output: Olá, João!
+                </code>
+            </pre>
+
+            <h3>
+                Estruturas de controle: Você pode usar estruturas de controle, como 'if'/'else', 'for', 'while', 'switch', para tomar decisões e controlar o fluxo do seu código.
+            </h3>
+            <pre>
+                <code>
+                    let idade = 18;
+
+                    if (idade >= 18) {
+                        console.log("Você é maior de idade.");
+                    } else {
+                        console.log("Você é menor de idade.");
+                    }
+                </code>
+            </pre>
+
+            <h3>
+                Manipulação do DOM: O Document Object Model (DOM) representa a estrutura HTML de uma página e 
+                permite que você manipule e interaja com os elementos HTML usando JavaScript. 
+                Você pode selecionar elementos, alterar seu conteúdo, estilo, adicionar ou remover elementos e lidar com eventos.
+            </h3>
+            <pre>
+                <code>
+                    // Selecionando um elemento pelo ID
+                    let meuElemento = document.getElementById("meu-elemento");
+
+                    // Alterando o conteúdo de um elemento
+                    meuElemento.textContent = "Novo conteúdo";
+
+                    // Adicionando um evento de clique
+                    meuElemento.addEventListener("click", function() {
+                        console.log("Clicou no elemento!");
+                    });
+                </code>
+            </pre>
+
+            <p>
+                Esses são apenas alguns dos conceitos básicos do JavaScript. 
+                A linguagem é muito rica e versátil, e existem muitos recursos e bibliotecas disponíveis para expandir suas capacidades.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Quattro Edtech</p>
+    </footer>
+    
+    <script src="Assets/js/index.js"></script>
+</body>
+</html>
