@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: bisque;
 }
 
 #try-button {
@@ -25,37 +26,62 @@
 }
 
 body{
-  background-color: bisque;
-  width: 100vw;
+  background-color: rgb(104, 73, 35);
+  width: 99vw;
   height: fit-content;
-  padding: 0 10%;
+  overflow-x: hidden;
 }
 
 header{
+  top: 0;
   text-align: center;
   margin: auto;
   padding: auto;
-  background-color: tomato;
-  height: 30px;
+  background-color: #4CAF50;
+  height: 40px;
+  position: fixed;
+  width: 100vw;
+  max-width: 100%;
+  overflow-y: hidden;
+  overflow-x: hidden;
+ 
+}
+
+header nav{
+  color: darkorange;
+  display: flex;
+  gap: 50px;
+  margin: auto;
+  padding: 0 20%;
 }
 
 a{
   cursor: pointer;
   margin: 10px;
   text-decoration: none;
+  display: inline-block;
+  flex-direction: column;
+  width: auto;
+  font-size: 18px;
+  color: rgb(229, 255, 0);
 }
 
-nav:hover{
-  color: #45a049;
-  font-size: 18px;
+a:hover{
+  color: #fc0404;
+  transition: all ease-in-out 1s;
+
 }
 
 main{
-  padding: 20px 0;
+  margin-top: 30px;
+  width: 100vw;
+  padding: 20px 18%;
+  
 }
 
 h2{
   padding: 0 0 10px 0;
+  text-align: center;
 }
 
 h3{
@@ -64,6 +90,14 @@ h3{
 
 p{
   padding: 3px 0;
+}
+
+ul{
+  list-style-type: none;
+}
+
+ul li{
+  text-decoration: none;
 }
 
 .example{
@@ -82,4 +116,43 @@ button{
   padding: 5px;
   margin: 5px;
   justify-content: right;
+}
+
+img{
+  width: fit-content;
+  height: 600px;
+}
+
+pre {
+  max-width: 100%;
+  overflow-x: auto;
+  white-space: pre-wrap;
+}
+
+#back-to-top {
+  display: none; /* Ocultar o botão inicialmente */
+  position: fixed; /* Fixar o botão na posição desejada */
+  bottom: 20px; /* Distância em relação à parte inferior da janela */
+  right: 20px; /* Distância em relação à parte direita da janela */
+  background-color: #000; /* Cor de fundo do botão */
+  color: #fff; /* Cor do texto do botão */
+  padding: 10px; /* Espaçamento interno do botão */
+  border-radius: 4px; /* Arredondamento das bordas do botão */
+}
+
+#back-to-top:hover {
+  background-color: #333; /* Cor de fundo do botão ao passar o mouse */
+}
+
+footer{
+  width: 100vw;
+  background-color: #45a049;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    position: sticky;
+    top: 0;
+  }
 }

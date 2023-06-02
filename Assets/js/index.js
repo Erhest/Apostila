@@ -30,11 +30,13 @@ function copyCode(button) {
   /* Limpa a seleção */
   window.getSelection().removeAllRanges()
 
-  /* Alerta de sucesso */
-  alert("Código copiado com sucesso")
 }
 
-                
-
-
-
+window.addEventListener('scroll', function() {
+  const button = document.getElementById('back-to-top');
+  if (window.pageYOffset > 100) {
+    button.style.display = 'block'; /* Exibir o botão quando rolar a página */
+  } else {
+    button.style.display = 'none'; /* Ocultar o botão quando voltar ao topo */
+  }
+});

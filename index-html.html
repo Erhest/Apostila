@@ -22,9 +22,20 @@
         </nav>
     </header>
    
-    <main>
+    <main id="topo">
+        <nav>
+            <ul>
+                <li><a href="#html-1">O que é HTML?</a></li>
+                <li><a href="#html-2">Estrutura básica</a></li>
+                <li><a href="#html-3">Aninhamento de elementos (div)</a></li>
+                <li><a href="#html-4">Comentários</a></li>
+                <li><a href="#html-5">Elementos vazios</a></li>
+                <li><a href="#html-6">Links</a></li>
+                <li><a href="#html-7">Listas(ul)</a></li>
+            </ul>
+        </nav>
         <section>
-            <h2>O que é HTML?</h2>
+            <h2 id="html-1">O que é HTML?</h2>
             <p>HTML (Hyper Text Markup Language) é uma linguagem de marcação usada para criar páginas da web.
                 Ele consiste em uma série de elementos que são usados para estruturar e formatar o conteúdo da página.
             </p>
@@ -47,18 +58,18 @@
                 <li>Atributos: Os atributos fornecem informações adicionais sobre os elementos HTML. 
                     Eles são especificados na tag de abertura e têm um nome e um valor. 
                     Por exemplo, o atributo src é usado para especificar a localização de uma imagem em uma tag' <code>&lt;img&gt;</code>'. Exemplo:
-                    <div class="example">
-                        <pre class="code">
-                            <code>&lt;img src="caminho/para/imagem.jpg" alt="Descrição da imagem" &gt;</code>
-                        </pre>
-                        <button onclick="copyCode(this)">Copiar Código</button>
-                    </div>
                 </li>
+                <div class="example">
+                    <pre class="code">
+                        <code>&lt;img src="caminho/para/imagem.jpg" alt="Descrição da imagem" &gt;</code>
+                    </pre>
+                    <button onclick="copyCode(this)">Copiar Código</button>
+                </div>
             </ul>
         </section>
     
         <section>
-            <h3>Estrutura básica de uma página HTML: Toda página HTML deve ter uma estrutura básica. Aqui está um exemplo:</h3>
+            <h3 id="html-2">Estrutura básica de uma página HTML: Toda página HTML deve ter uma estrutura básica. Aqui está um exemplo:</h3>
             <div example>
                 <!-- <div class="flex items-center relative text-gray-200 bg-gray-800 px-4 py-2 text-xs font-sans justify-between rounded-t-md">
                     <span>html</span><button class="flex ml-auto gap-2">
@@ -132,7 +143,7 @@
         </section>
     
         <section>        
-            <h3>Aninhamento de elementos: É possível aninhar elementos HTML, o que significa colocar um elemento dentro de outro.</h3>
+            <h3 id="html-3">Aninhamento de elementos: É possível aninhar elementos HTML, o que significa colocar um elemento dentro de outro.</h3>
             <p>Exemplo:</p>
             <div class="example">
                 <pre class="code">
@@ -147,7 +158,7 @@
             </div>
             <p>Nesse exemplo, o elemento '&lt;h2&gt;' e o elemento '&lt;p&gt;' estão aninhados dentro do elemento '&lt;div&gt;'.</p>
     
-            <h3>Comentários: Você pode adicionar comentários ao seu código HTML para fins de documentação ou para explicar partes específicas do código. 
+            <h3 id="html-4">Comentários: Você pode adicionar comentários ao seu código HTML para fins de documentação ou para explicar partes específicas do código. 
                 Os comentários não são exibidos na página, mas são úteis para outros desenvolvedores ou para você mesmo ao revisar o código. 
                 Os comentários em HTML são escritos entre <code>&lt;!-- e --&gt;</code>.</h3>
             <p>Exemplo:</p>
@@ -157,7 +168,7 @@
                 </pre>
                 <button onclick="copyCode(this)">Copiar Código</button>
             </div>
-            <h3>Elementos vazios: Alguns elementos HTML não possuem conteúdo e não precisam de uma tag de fechamento. Eles são chamados de elementos vazios ou autossuficientes. 
+            <h3 id="html-5">Elementos vazios: Alguns elementos HTML não possuem conteúdo e não precisam de uma tag de fechamento. Eles são chamados de elementos vazios ou autossuficientes. 
                 Por exemplo, a tag '&lt;br&gt;' é usada para inserir uma quebra de linha e não requer uma tag de fechamento.</h3>
             <div class="example">
                 <pre class="code">
@@ -168,7 +179,7 @@
                 <button onclick="copyCode(this)">Copiar Código</button>
             </div>
     
-            <h3>Links: O elemento '&lt;a&gt;' é usado para criar links em uma página HTML. Ele requer o atributo "href", que especifica o destino do link.</h3>
+            <h3 id="html-6">Links: O elemento '&lt;a&gt;' é usado para criar links em uma página HTML. Ele requer o atributo "href", que especifica o destino do link.</h3>
             <p>Exemplo:</p>
             <div class="example">
                 <pre class="code">
@@ -178,7 +189,7 @@
             </div>
             <p>Ao clicar no link, o usuário será redirecionado para o URL especificado no atributo "href".</p>
     
-            <h3>Listas: Você pode criar listas ordenadas '&lt;ol&gt;' ou listas não ordenadas '&lt;ul&gt;' em HTML. Cada item da lista é representado pela tag '&lt;li&gt;'.</h3>
+            <h3 id="html-7">Listas: Você pode criar listas ordenadas '&lt;ol&gt;' ou listas não ordenadas '&lt;ul&gt;' em HTML. Cada item da lista é representado pela tag '&lt;li&gt;'.</h3>
             <p>Exemplo:</p>
             <div class="example">
                 <pre class="code">
@@ -190,12 +201,12 @@
                         &lt;/ul&gt;
                     </code>
                 </pre>
-                <button onclick="copyCode(this)">Copiar Código</button>
-                
-                <p>Isso criará uma lista não ordenada com três itens.</p>
+                <button onclick="copyCode(this)">Copiar Código</button>                
             </div>
+            <p>Isso criará uma lista não ordenada com três itens.</p>
         </section>
     </main>
+    <a href="#topo" id="back-to-top">Voltar ao topo</a>
 
     <footer>
         <p>Quattro Edtech</p>
