@@ -76,7 +76,6 @@ main{
   margin-top: 30px;
   width: 100vw;
   padding: 20px 18%;
-  
 }
 
 h2{
@@ -102,7 +101,7 @@ ul li{
 
 .example{
   background-color: rgb(41, 37, 37);
-  color: blanchedalmond;
+  color: rgb(216, 208, 197);
   padding: 5px 0;
   margin: auto;
 }
@@ -119,7 +118,7 @@ button{
 }
 
 img{
-  width: fit-content;
+  width: 80%;
   height: 600px;
 }
 
@@ -152,7 +151,7 @@ footer{
 
 @media screen and (max-width: 768px) {
   header {
-    position: sticky;
-    top: 0;
+    position: static;
+    width: 100%;
   }
 }
